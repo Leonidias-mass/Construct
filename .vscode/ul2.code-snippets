@@ -1,0 +1,17 @@
+{	
+	"Print to console": {
+		"scope": "html",
+		"prefix": "ul2",
+		"body": [
+			"<ul class=\"$1\">",
+				"<li class=\"$2\">",
+					"$3",
+				"</li>",
+				"<li class=\"$2\">",
+					"$4",
+				"</li>",
+			"</ul>"
+		],
+		"description": "ul 2 point"
+	}
+}

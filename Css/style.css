@@ -1,0 +1,616 @@
+@font-face {
+    font-family: Proxima Nova Alt regular;
+    src: url(/Fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Alt\ Regular-webfont.woff);
+}
+@font-face {
+    font-family: Proxima Nova Alt-Bold;
+    src: url(/Fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Alt\ Bold-webfont.woff2);
+}
+body {
+    background-color: #fff;
+}
+* {
+    box-sizing: border-box;
+}
+:root {
+    --font-size-logo: 21px;
+    --font-size-nav: 16px;
+    --font-size-title: 72px;
+    --font-size-head: 36px;
+    --font-size-line: 46px;
+    --font-size-point: 26px;
+}
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto;     */
+}
+.container-weoffer {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+a {
+    text-decoration: none;
+}
+/* header */
+/* Верхняя полоса heder */
+.top-container__list {
+    background-color: #2d3e50;    
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+.top-container__item {
+    flex-basis: 23%;    
+}
+.top-container__mail, .top-container__phone {
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: Proxima Nova Alt regular;
+}
+.top-container__mail {
+    background-image: url(/Img/email_ico.png);    
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+.top-container__item_left {
+    text-align: left;
+}
+.top-container__item_right {
+    text-align: right;
+}
+/* Нижняя полоса header */
+.bottom-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px 0px;
+}
+.bottom-container__logo {
+    text-transform: uppercase;
+    font-family: Proxima Nova Alt-Bold;
+    font-size: var(--font-size-logo);
+    color: #ffc000;    
+}
+.bottom-container__logo:after {
+    content: "truct";
+    color: #252c30;
+}
+.bottom-container__list {
+    display: flex;
+}
+.bottom-container__item:not(:last-child) {
+    margin-right: 50px;
+}
+.bottom-container__link {
+    text-transform: uppercase;
+    font-family: Proxima Nova Alt-Bold;
+    font-size: var(--font-size-nav);
+    color: #252c30;
+}
+.bottom-container__link:hover {
+    color: #ffc000;
+}
+/* hero */
+.hero-container {
+    background: url(/Img/Bg/repace.jpg) right center no-repeat white;
+    background-size: cover;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 956px;
+    padding-top: 350px;
+}
+.hero-container__title {
+    color: #ffc000;
+    font-size: var(--font-size-title);
+    font-family: Proxima Nova Alt-Bold;
+    line-height: 1.25;
+}
+.hero-container__title_white {
+    color: #fff;
+}
+.hero-container__description {
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    font-family: Proxima Nova Alt regular;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.hero-container__link {
+    text-transform: uppercase;
+    font-size: var(--font-size-nav);
+    color: #fff;
+    padding: 25px 90px;
+    background-color: #ffc000;
+    border-radius: 35px;
+    font-family: Proxima Nova Alt-Bold;
+}
+/* weoffer */
+.weoffer-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+.weoffer-up__head {
+    font-size: 18px;
+    line-height: 30px;
+    color: #232323;
+    font-family: Proxima Nova Alt regular;
+}
+.weoffer-up__title {
+    font-size: var(--font-size-head);
+    line-height: 30px;
+    color: #ffc000;
+    font-family: Proxima Nova Alt-Bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.weoffer-up__title:after {
+    content: "To Free Psd Construction Template";
+    color: #252c30;    
+}
+.weoffer-up__description {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Proxima Nova Alt regular;
+    text-align: center;
+    color: #252c30;
+}
+.weoffer-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.weoffer-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d3e50;
+    padding: 60px 25px;
+    border: 1px solid #ffc000;
+    color: #fff;
+    flex-basis: 23%;    
+}
+/* .weoffer-list__link:not(:last-child) {
+    margin-right: 30px;} */
+.weoffer-list__link {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Proxima Nova Alt-Bold;     
+    margin-top: 45px;
+    margin-bottom: 20px; 
+    color: #fff;  
+}
+.weoffer-list__head:hover {
+    color: #ffc000;
+    transition: .5s;
+}
+.weoffer-list__description {
+    font-size: var(--font-size-nav);
+    line-height: 30px;
+    
+    font-family: Proxima Nova Alt regular;
+    text-align: center;
+}
+/* .weoffer-list__item:hover {
+    background-color: #fff;
+    color: #252c30;
+    border-radius: 20px;
+    transition: .5s;
+} */
+.weoffer-list__item:hover .cls-1 {    
+    stroke: #2d3e50;
+    stroke-opacity: .6;
+    transition: .5s;
+}
+/* our services */
+.ourservices-container {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ourservices-container__img {
+    background: url(/Img/Bg/replace.jpg) center no-repeat;
+    background-size: contain;    
+    min-height: 528px;
+    min-width: 48%;
+}
+.ourservices-container__head {
+    font-size: var(--font-size-head);
+    line-height: 30px;
+    font-family: Proxima Nova Alt-Bold;
+}
+.ourservices-container__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 36.5%;
+    align-items: center;    
+}
+.ourservices-container__item {
+    background: url(/Img/screwdriver.png) center left 35px no-repeat;
+    padding-left: 142px;
+}
+.ourservices-container__link {
+    font-size: 18px;    
+    line-height: 30px;
+    font-family: Proxima Nova Alt-Bold;
+    text-transform: uppercase;
+    color: #232323;
+}
+.ourservices-container__link:hover {
+    color: #ffc000;
+    transition: .5s;
+}
+.ourservices-container__description {
+    font-size: var(--font-size-nav);
+    line-height: 30px;
+    font-family: Proxima Nova Alt regular;
+    color: #232323;
+}
+/* line */
+.line {
+    display: flex;
+    background: url(/Img/Bg/replace\ image1.jpg) center no-repeat;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 244px;
+    margin-top: 120px;
+}
+.line__point {
+    font-size: var(--font-size-point);
+    line-height: 3;
+    font-family: Proxima Nova Alt-Bold;
+    color: #f5f5f5;
+}
+.line__record {
+    font-size: var(--font-size-line);
+    line-height: 30px;
+}
+/* what */
+.what-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+.what-up__head {
+    font-size: 18px;
+    line-height: 30px;
+    color: #232323;
+    font-family: Proxima Nova Alt regular;
+}
+.what-up__title {
+    font-size: var(--font-size-head);
+    line-height: 30px;
+    color: #ffc000;
+    font-family: Proxima Nova Alt-Bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.what-up__title:after {
+    content: "We Are Offering";
+    color: #252c30;    
+}
+.what-up__description {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Proxima Nova Alt regular;
+    text-align: center;
+    color: #252c30;
+}
+.what-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.what-list__vert {
+    display: flex;
+    flex-direction: column;
+}
+.what-list__item_vert {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.what-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+.what-list__item_vert:nth-child(1) {
+    margin-bottom: 60px;
+}
+.what-list__title {
+    font-size: 26px;
+    line-height: 30px;
+    font-family: Proxima Nova Alt regular;   
+}
+.what-list__link {
+    color: #252c30;
+}
+.what-list__link:hover {
+    color: #ffc000;
+    transition: .5s;
+}
+.what-list__description {
+    font-size: var(--font-size-nav);
+    line-height: 30px;
+    font-family: Proxima Nova Alt regular;
+    color: #252c30;
+}
+.what-list__text {
+    padding-left: 55px;
+}
+/* view */
+.view-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+.view-up__head {
+    font-size: 18px;
+    line-height: 30px;
+    color: #232323;
+    font-family: Proxima Nova Alt regular;
+}
+.view-up__title {
+    font-size: var(--font-size-head);
+    line-height: 30px;
+    color: #ffc000;
+    font-family: Proxima Nova Alt-Bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.view-up__title:after {
+    content: "Our Project Galery";
+    color: #252c30;    
+}
+.view-up__description {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Proxima Nova Alt regular;
+    text-align: center;
+    color: #252c30;
+    margin-bottom: 60px;
+}
+.view-img {
+    display: flex;
+}
+.view-img__list {
+    display: flex;
+}
+/* team */
+.team-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+.team-up__head {
+    font-size: 18px;
+    line-height: 30px;
+    color: #232323;
+    font-family: Proxima Nova Alt regular;
+}
+.team-up__title {
+    font-size: var(--font-size-head);
+    line-height: 30px;
+    color: #ffc000;
+    font-family: Proxima Nova Alt-Bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.team-up__title:after {
+    content: "Members";
+    color: #252c30;    
+}
+.team-up__description {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Proxima Nova Alt regular;
+    text-align: center;
+    color: #252c30;
+    margin-bottom: 60px;
+}
+.team-cards {
+    display: flex;
+    justify-content: space-between;    
+}
+.team-cards__face {
+    margin-bottom: 20px;
+}
+.team-cards__head {
+    font-size: 18px;
+    font-family: Proxima Nova Alt-Bold;
+    line-height: 2.5;
+    text-transform: uppercase;
+    color: #f5f5f5;
+}
+.team-cards__job {
+    font-size: 14px;
+    font-family: Proxima Nova Alt regular;
+    color: #ffc000;
+}
+.team-cards__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 60px;
+    background-color: #2d3e50; 
+}
+.team-cards__img:hover {
+    border-radius: 18px;
+    transition: .3s;
+} 
+.team-cards__link:not(:last-child) {
+    margin-right: 22px;
+}
+.team-cards__social {
+    margin-top: 30px;
+}
+/* clients */
+.clients-container {
+    background-color: #f4f4f4;
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+.clients-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;    
+}
+.clients-up__head {
+    font-size: 18px;
+    line-height: 30px;
+    color: #232323;
+    font-family: Proxima Nova Alt regular;
+}
+.clients-up__title {
+    font-size: var(--font-size-head);
+    line-height: 30px;
+    color: #ffc000;
+    font-family: Proxima Nova Alt-Bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.clients-up__title:after {
+    content: "Testimonias";
+    color: #252c30;    
+}
+.clients-up__description {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Proxima Nova Alt regular;
+    text-align: center;
+    color: #252c30;    
+}
+.clients-box {
+    max-width: 920px;
+    max-height: 430px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 60px 110px;
+    box-shadow: #2d3e50 3px 3px 20px;
+}
+.clients-box__up {
+     display: flex;
+    align-items: center;    
+} 
+.clients-box__name {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Proxima Nova Alt-Bold;
+    color: #2d3e50;    
+}
+.clients-box__job {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 2;
+    font-family: Proxima Nova Alt regular;
+    color: #2d3e50;
+}
+.clients-box__testimonia {
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Proxima Nova Alt regular;
+    color: #2d3e50;
+}
+/* world */
+.world-container {    
+    margin-top: 80px;
+}
+.world-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.world-up__head {
+    font-size: 18px;
+    line-height: 30px;
+    color: #232323;
+    font-family: Proxima Nova Alt regular;
+}
+.world-up__title {
+    font-size: var(--font-size-head);
+    line-height: 30px;
+    color: #ffc000;
+    font-family: Proxima Nova Alt-Bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.world-up__title:after {
+    content: "New Construction";
+    color: #252c30;    
+}
+.world-up__description {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Proxima Nova Alt regular;
+    text-align: center;
+    color: #252c30;
+    margin-bottom: 60px;
+}
+.world-cards__list {
+    display: flex;
+    max-width: 1069px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.world-cards__item {
+    background: #ffc000;
+    max-width: 303px;
+    padding-bottom: 30px;
+}
+.world-cards__head {
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: Proxima Nova Alt-Bold;
+    color: #fff;
+    padding: 30px 25px;
+}
+.world-cards__descripyin {
+    font-size: var(--font-size-nav);
+    line-height: 30px;
+    font-family: Proxima Nova Alt regular;
+    color: #fff;
+    padding: 0 25px 30px 25px;
+}
+.world-cards__date {
+    display: flex;
+    justify-content: space-between;
+    max-width: 253px;
+    margin: 0 auto;
+}
+.world-cards__day, .world-cards__link {
+    font-size: 16px;
+    font-family: Proxima Nova Alt regular;
+    color: #2d3e50;
+}
+.world-cards__link:hover {
+    font-family: Proxima Nova Alt-Bold;
+}
+
+
+
+
+
+  
+  
